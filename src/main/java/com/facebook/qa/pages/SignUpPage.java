@@ -50,7 +50,7 @@ public class SignUpPage extends testbase {
 	@FindBy(xpath="//div[@class='linkWrap noCount']")
 	WebElement signupUser;
 	
-	WebDriverWait wait = new WebDriverWait(driver, 20);
+	WebDriverWait wait = new WebDriverWait(driver, 30);
 	//Object Repository known as PageFactory in POM - Initialization.
 	public SignUpPage()
 	{

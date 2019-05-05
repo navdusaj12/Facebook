@@ -21,7 +21,8 @@ public class TestUtil extends testbase {
 
 	public static long PAGE_LOAD_TIMEOUT = 40;
 	public static long IMPLICIT_WAIT = 40;
-	public static String TESTDATA_SHEET_PATH = prop.getProperty("TestDataFile")+prop.getProperty("SheetName");
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")+ "/src/main/java"
+			+"/com/facebook/qa/testdata/"+prop.getProperty("SheetName");
 
 	static Workbook book;
 	static Sheet sheet;

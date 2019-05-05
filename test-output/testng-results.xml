@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-05-04T10:58:30Z" name="Facebook Application Test Automation Test Suite" finished-at="2019-05-04T11:00:09Z" duration-ms="99048">
+  <suite started-at="2019-05-05T07:19:37Z" name="Default suite" finished-at="2019-05-05T07:24:12Z" duration-ms="274604">
     <groups>
     </groups>
-    <test started-at="2019-05-04T10:58:30Z" name="Facebook Signup Page" finished-at="2019-05-04T11:00:09Z" duration-ms="99048">
+    <test started-at="2019-05-05T07:19:37Z" name="Default test" finished-at="2019-05-05T07:24:12Z" duration-ms="274604">
       <class name="com.facebook.qa.testcases.SignUpTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:58:30Z" name="setUp" finished-at="2019-05-04T10:58:39Z" duration-ms="9278" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:19:37Z" name="setUp" finished-at="2019-05-05T07:20:03Z" duration-ms="26250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Title()[pri:1, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:58:39Z" name="Title" finished-at="2019-05-04T10:58:40Z" duration-ms="340" status="PASS">
+        <test-method signature="Title()[pri:1, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:20:03Z" name="Title" finished-at="2019-05-05T07:20:03Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Title -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:58:40Z" name="tearDown" finished-at="2019-05-04T10:58:41Z" duration-ms="740" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:20:03Z" name="tearDown" finished-at="2019-05-05T07:20:04Z" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:58:42Z" name="setUp" finished-at="2019-05-04T10:58:51Z" duration-ms="9579" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:20:05Z" name="setUp" finished-at="2019-05-05T07:20:18Z" duration-ms="12976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CreateNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:58:51Z" name="CreateNewUser" data-provider="getSignUpTestData" finished-at="2019-05-04T10:59:03Z" duration-ms="12151" status="PASS">
+        <test-method signature="CreateNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:20:18Z" name="CreateNewUser" data-provider="getSignUpTestData" finished-at="2019-05-05T07:21:44Z" duration-ms="86064" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,18 +66,97 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AARUSH', ip: '10.0.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\AJAY~1.TAU\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59871}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 98fdf728ecadb0d4ef016ba099e88642
+*** Element info: {Using=xpath, value=//div[@class='linkWrap noCount']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AARUSH', ip: '10.0.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\AJAY~1.TAU\AppData...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:59871}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: 98fdf728ecadb0d4ef016ba099e88642
+*** Element info: {Using=xpath, value=//div[@class='linkWrap noCount']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.facebook.qa.pages.SignUpPage.NewUserSignUp(SignUpPage.java:108)
+at com.facebook.qa.testcases.SignUpTest.CreateNewUser(SignUpTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:03Z" name="tearDown" finished-at="2019-05-04T10:59:04Z" duration-ms="862" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:21:44Z" name="tearDown" finished-at="2019-05-05T07:21:45Z" duration-ms="1016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:04Z" name="setUp" finished-at="2019-05-04T10:59:14Z" duration-ms="10030" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:21:45Z" name="setUp" finished-at="2019-05-05T07:22:06Z" duration-ms="21029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CreateNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:14Z" name="CreateNewUser" data-provider="getSignUpTestData" finished-at="2019-05-04T10:59:25Z" duration-ms="10941" status="PASS">
+        <test-method signature="CreateNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:22:06Z" name="CreateNewUser" data-provider="getSignUpTestData" finished-at="2019-05-05T07:22:27Z" duration-ms="20536" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -123,15 +202,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:25Z" name="tearDown" finished-at="2019-05-04T10:59:26Z" duration-ms="923" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:22:27Z" name="tearDown" finished-at="2019-05-05T07:22:28Z" duration-ms="908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:26Z" name="setUp" finished-at="2019-05-04T10:59:36Z" duration-ms="10074" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:22:28Z" name="setUp" finished-at="2019-05-05T07:22:47Z" duration-ms="18888" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CreateNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:36Z" name="CreateNewUser" data-provider="getSignUpTestData" finished-at="2019-05-04T10:59:47Z" duration-ms="10810" status="PASS">
+        <test-method signature="CreateNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:22:47Z" name="CreateNewUser" data-provider="getSignUpTestData" finished-at="2019-05-05T07:23:25Z" duration-ms="38753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -177,15 +256,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:47Z" name="tearDown" finished-at="2019-05-04T10:59:48Z" duration-ms="865" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:23:25Z" name="tearDown" finished-at="2019-05-05T07:23:26Z" duration-ms="783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:48Z" name="setUp" finished-at="2019-05-04T10:59:58Z" duration-ms="9802" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:23:26Z" name="setUp" finished-at="2019-05-05T07:23:42Z" duration-ms="16291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CreateNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T10:59:58Z" name="CreateNewUser" data-provider="getSignUpTestData" finished-at="2019-05-04T11:00:08Z" duration-ms="10722" status="PASS">
+        <test-method signature="CreateNewUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:23:42Z" name="CreateNewUser" data-provider="getSignUpTestData" finished-at="2019-05-05T07:24:11Z" duration-ms="28346" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,11 +310,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@78b729e6]" started-at="2019-05-04T11:00:08Z" name="tearDown" finished-at="2019-05-04T11:00:09Z" duration-ms="932" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.facebook.qa.testcases.SignUpTest@10db82ae]" started-at="2019-05-05T07:24:11Z" name="tearDown" finished-at="2019-05-05T07:24:12Z" duration-ms="818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.facebook.qa.testcases.SignUpTest -->
-    </test> <!-- Facebook Signup Page -->
-  </suite> <!-- Facebook Application Test Automation Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -43,7 +43,8 @@ public class testbase {
 		String Browser = prop.getProperty("browser");
 		if(Browser.equals("firefox"))
 		{
-				System.setProperty("webdriver.gecko.driver", prop.getProperty("FireFoxDriverPath"));
+				System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+ "/src/main/resources"
+					+ "/geckodriver.exe");
 				FirefoxOptions options = new FirefoxOptions();
 				options.setProfile(new FirefoxProfile());
 				//Using firefox options to disable notifications during sign up process.
@@ -51,7 +52,8 @@ public class testbase {
 				driver = new FirefoxDriver(options);     
 		}
 		else if(Browser.equals("chrome")){
-				System.setProperty("webdriver.chrome.driver", prop.getProperty("ChromeDriverPath"));
+				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "/src/main/resources"
+					+ "/chromedriver.exe");
 				Map<String, Object> prefs = new HashMap<String, Object>();
 				//Using chrome options to disable notifications during sign up process.
 				prefs.put("profile.default_content_setting_values.notifications", 2);

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.facebook.qa.testcases.SignUpTest">
         <methods>
-          <include name="CreateNewUser" invocation-numbers="3"/>
+          <include name="CreateNewUser" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
